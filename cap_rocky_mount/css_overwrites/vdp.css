@@ -1,0 +1,54 @@
+#mobile-actions, 
+#desktop-actions,
+.vdp-container .block.card.hidden-lg .contact-block.hidden-lg,
+.specials-title, 
+.specials-block,
+.overview-icons a[title="Download Window Sticker"],
+#before-you-buy,
+#v-badges {
+  display: none !important;
+}
+
+#v-badges {
+  text-align: center;
+}
+
+a#couponModalBtn {
+    background: #00095b;
+    border: 2px solid #00095b;
+    width: 100%;
+    border-radius: 50px;
+    color: white;
+    padding: 12px 20px;
+    margin-bottom: 10px;
+  -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+a#couponModalBtn:hover,
+a#couponModalBtn:active,
+a#couponModalBtn:focus {
+    background: #1700f4;
+    border: 2px solid #1700f4;
+    color: white;
+      -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+
+/* Hiding $500 Coupon CTA on USED - GR 12/19/25 */
+.vehicle-top-info[data-inventory-type="used"] .vehicle-show-buttons-stacked .col-xs-6:nth-of-type(6){
+    display: none;
+}
+
+/* Hiding $500 Coupon CTA on NEW - GR 12/19/25 */
+.vehicle-top-info[data-inventory-type="new"] .vehicle-show-buttons-stacked .col-xs-6:nth-of-type(5) {
+    display: none;
+}
+
+/* "Start the buying Process" CTA adjustments - GR 12/19/25 */
+a#accelerateModalBtn {
+    margin: 0px;
+}
