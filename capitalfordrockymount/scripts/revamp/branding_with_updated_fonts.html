@@ -1,0 +1,219 @@
+<!-- [head tag] - Branding with updated fonts -->
+
+<style>
+  /* UPDATED 12/04/25 */
+
+  :root {
+    --sokal-pch-ford: #1700F4;
+  }
+
+  body {
+    --pc: var(--sokal-pc-ford, #333333);
+    --pcd: var(--sokal-pcd-ford, #000000);
+    --pch: var(--sokal-pch-ford, #777777);
+    --sc: var(--sokal-sc-ford, #066FEF);
+    --btn-br: var(--sokal-btn-br-ford, 50px);
+  }
+
+  /* Latest Ford Fonts */
+
+  @font-face {
+    font-family: "FordF1-Light";
+    font-style: normal;
+    font-display: swap;
+    font-weight: 300;
+    src: url(https://d2v1gjawtegg5z.cloudfront.net/uploads/files/001/495/073/original/FordF1-Light-reduced-for-web.otf?1749149328) format("opentype");
+  }
+
+  @font-face {
+    font-family: "FordF1-Regular";
+    font-style: normal;
+    font-display: swap;
+    font-weight: 400;
+    src: url(https://d2v1gjawtegg5z.cloudfront.net/uploads/files/001/495/070/original/FordF1-Regular-reduced-for-web.otf?1749145089) format("opentype");
+  }
+
+  @font-face {
+    font-family: "FordF1-Medium";
+    font-style: normal;
+    font-display: swap;
+    font-weight: 500;
+    src: url(https://d2v1gjawtegg5z.cloudfront.net/uploads/files/001/495/072/original/FordF1-Medium-reduced-for-web.otf?1749146663) format("opentype");
+  }
+
+  @font-face {
+    font-family: "FordF1-Semibold";
+    font-style: normal;
+    font-display: swap;
+    font-weight: 600;
+    src: url(https://d2v1gjawtegg5z.cloudfront.net/uploads/files/001/495/074/original/FordF1-Semibold-reduced-for-web.otf?1749149329) format("opentype");
+  }
+
+  @font-face {
+    font-family: "FordF1-Bold";
+    font-style: normal;
+    font-display: swap;
+    font-weight: 700;
+    src: url(https://d2v1gjawtegg5z.cloudfront.net/uploads/files/001/495/071/original/FordF1-Bold-reduced-for-web.otf?1749146661) format("opentype");
+  }
+
+  /* LARGE ATTENTION GRABBER FONT */
+
+  @font-face {
+    font-family: "AmericanGroteskCompressed-Black";
+    font-style: normal;
+    font-display: swap;
+    font-weight: 800;
+    src: url(https://d2v1gjawtegg5z.cloudfront.net/uploads/files/001/797/736/original/AmericanGroteskCompressed-Black.otf?1764874758) format("opentype");
+  }
+
+  /* Legacy Ford Font Maps */
+
+  @font-face {
+    font-family: "FordAntenna-Regular";
+    font-style: normal;
+    font-display: swap;
+    font-weight: 400;
+    src: url(https://d2v1gjawtegg5z.cloudfront.net/uploads/files/001/495/070/original/FordF1-Regular-reduced-for-web.otf?1749145089) format("opentype");
+  }
+
+  @font-face {
+    font-family: "FordAntenna-Bold";
+    font-style: normal;
+    font-display: swap;
+    font-weight: 500;
+    src: url(https://d2v1gjawtegg5z.cloudfront.net/uploads/files/001/495/072/original/FordF1-Medium-reduced-for-web.otf?1749146663) format("opentype");
+  }
+
+  /* Default Fonts */
+
+  body,
+  .footer-disclaimer {
+    font-family: FordF1-Regular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6, footer, .FooterGrey, .FooterBlack {
+    font-family: FordF1-Medium, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+
+  #desktop-menu>li>a:not([href="#dropdown-search"]) {
+    font-family: FordF1-Semibold, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+
+  .vehicle-unit-container .vehicle-make-model .model,
+  .vehicle-unit-container.new-false .vehicle-make-model,
+  .lowest-price,
+  .single-price,
+  strong {
+    font-family: FordF1-Bold, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+
+  /* Font Utilies */
+
+  .weight-light {
+    font-family: FordF1-Light, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+
+  .weight-normal {
+    font-family: FordF1-Regular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+
+  .weight-medium {
+    font-family: FordF1-Medium, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+
+  .weight-semibold {
+    font-family: FordF1-Semibold, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+
+  .weight-bold,
+  .text-bold {
+    font-family: FordF1-Bold, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+
+  /* Font Overrides */
+
+  html .sokal-btn .sokal-btn-copy {
+    font-family: FordF1-Bold, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+
+  /* Default ADA page logo */
+  
+  img[src="https://d2v1gjawtegg5z.cloudfront.net/assets/ada_logo-60d19c3b4c537e0f6dd75513ad8275a434ac418291f443fbae24be71a1cf6e7b.png"] {
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+  }
+  
+  /* Site Map Links */
+  
+  .site-map-container a,
+  .row > .col-xs-12 > ul > li > a,
+  .row > .col-md-4 > ul > a,
+  .row > .col-md-4 > ul > a + ul > li > a,
+  .row > .col-xs-12 > .row > .col-xs-6 > a,
+  .row > .col-xs-12 > .row > .col-xs-4 > a {
+    color: #000000;
+    color: var(--pcd);
+  }
+  
+  /* Color Palette */
+
+  .primary-bg {
+    background-color: #333333;
+    background-color: var(--pc);
+  }
+  .primary-color {
+    color: #333333;
+    color: var(--pc);
+  }
+  .primary-dark-bg {
+    background-color: #000000;
+    background-color: var(--pcd);
+  }
+  .primary-dark-color {
+    color: #000000;
+    color: var(--pcd);
+  }
+  .primary-highlight-bg {
+    background-color: #777777;
+    background-color: var(--pch);
+  }
+  .primary-highlight-color {
+    color: #777777;
+    color: var(--pch);
+  }
+  .secondary-color {
+    color: var(--sc, #066FEF);
+  }
+  .secondary-color-bg {
+    background-color: var(--sc, #066FEF);
+  }
+  .bg-white {
+    background-color: #ffffff;
+  }
+  .color-white {
+    color: #ffffff;
+  }
+  .bg-gray {
+    background-color: #bfbfbf;
+  }
+  .color-gray {
+    color: #bfbfbf;
+  }
+  .bg-gradient,
+  .bg--blue-gradient {
+    background: #000000;
+    background: linear-gradient(270deg, var(--pc) 0%, var(--pcd) 100%);
+  }
+
+  /* Temp Fix for New Models Dropdown in mobile nav */
+
+  .nav-right-with-contact [class*="mobile-nav-bar"] .side-nav li.models-dropdown {
+    display: none !important;
+  }
+
+  .nav-right-with-contact [class*="mobile-nav-bar"] .side-nav li.models-dropdown-sibling {
+    display: list-item !important;
+  }
+
+</style>
