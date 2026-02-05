@@ -1629,11 +1629,13 @@ body .active-template-price-block .stacked-vehicle-prices > .lowest-price[class*
 
 /* SRP Tabbed Payment Block */
 
-body .vehicle-unit-finance-lease[data-payment-props="0 0 0"] .tabbed-payment-block-template-payment-preview {
+body .vehicle-unit-finance-lease[data-payment-props="0 0 0"] .tabbed-payment-block-template-payment-preview,
+body .vehicle-unit-finance-lease[data-payment-props="  "] .tabbed-payment-block-template-payment-preview {
   display: none;
 }
 
-body .vehicle-unit-finance-lease[data-payment-props="0 0 0"] .tabbed-payment-block-template-contact {
+body .vehicle-unit-finance-lease[data-payment-props="0 0 0"] .tabbed-payment-block-template-contact,
+body .vehicle-unit-finance-lease[data-payment-props="  "] .tabbed-payment-block-template-contact {
   display: block;
 }
 
