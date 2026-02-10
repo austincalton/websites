@@ -1623,7 +1623,9 @@ body .active-template-price-block .stacked-vehicle-prices > [class*="col-"] > * 
 }
 
 body .active-template-price-block .vehicle-prices > .lowest-price[class*="col-"] > *,
-body .active-template-price-block .stacked-vehicle-prices > .lowest-price[class*="col-"] > * {
+body .active-template-price-block .vehicle-prices > .single-stacked-price[class*="col-"] > *,
+body .active-template-price-block .stacked-vehicle-prices > .lowest-price[class*="col-"] > *,
+body .active-template-price-block .stacked-vehicle-prices > .single-stacked-price[class*="col-"] > * {
   color: var(--sokal-pcd-ford);
 }
 
