@@ -899,11 +899,7 @@ body .vehicle-show-buttons .btn:focus {
     min-height: 500px;
   }
 }
-/* Hididng Second Brayan Perez Photo */
-.employee-section .employee-img img[src="https://d2v1gjawtegg5z.cloudfront.net/employees/experience_logos/000/020/705/original/BIGMEXICANO.jpg?1670256047"]
-{
-  display: none;
-}
+
 /* Carnow CTA CSS */
 .cn-button-container a[data-label="TEXT US"] {
   display: none !important;
