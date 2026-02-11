@@ -5,9 +5,11 @@
   color: #00095b;
   text-align: left;
 }
+
 #vehicle-options-modal .table > tbody > tr > td {
-  border: 0px;
+  border: 0;
 }
+
 #vehicle-options-modal .table-striped > tbody > tr:nth-of-type(odd) {
   background-color: transparent;
 }
