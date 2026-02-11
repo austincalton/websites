@@ -501,17 +501,3 @@ h5.incentive-label {
   opacity: 1;
   height: auto;
 }
-
-/* To-do: Remove this once application update goes live */
-
-@media (min-width: 1501px) {
-  .page-template--vdp .sokal-vdp-component:not(.sokal-vdp-component-sticky) {
-    width: 100%;
-  }     
-}
-
-/* VDP Gallery post-app update override */
-
-body {
-  --sokal-vehicle-gallery-max-width: 100%;
-}
