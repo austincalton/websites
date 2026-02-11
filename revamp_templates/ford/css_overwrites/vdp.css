@@ -509,3 +509,9 @@ h5.incentive-label {
     width: 100%;
   }     
 }
+
+/* VDP Gallery post-app update override */
+
+body {
+  --sokal-vehicle-gallery-max-width: 100%;
+}
