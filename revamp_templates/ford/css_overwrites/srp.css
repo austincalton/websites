@@ -1,0 +1,15 @@
+/* Vehicle Features Modal */
+
+#vehicle-options-modal .vehicle-options-block h2 {
+  background-color: transparent;
+  color: #00095b;
+  text-align: left;
+}
+
+#vehicle-options-modal .table > tbody > tr > td {
+  border: 0;
+}
+
+#vehicle-options-modal .table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: transparent;
+}

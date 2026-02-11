@@ -1,6 +1,6 @@
 /* Default ADA page logo */
 
-img[src="https://d2v1gjawtegg5z.cloudfront.net/assets/ada_logo-60d19c3b4c537e0f6dd75513ad8275a434ac418291f443fbae24be71a1cf6e7b.png"]
+img[src*="cloudfront.net/assets/ada_logo-"]
 {
   -webkit-filter: grayscale(1);
   filter: grayscale(1);
@@ -1429,10 +1429,12 @@ body .vehicle-index-page #vehicles {
   }
 }
 
-/* To-do: Define selectors here for banners that need to span full-width */
+/* Full-width Elements Within SRP Grid */
 
-body .vehicle-index-page #vehicles .some-element,
-body .vehicle-index-page .infinite-paginate-ui {
+body #vehicles .some-element,
+body .infinite-paginate-ui,
+#dealer_otn_container,
+.flexslider-interval-srp-banners {
   grid-column: 1 / -1;
 }
 
@@ -1679,7 +1681,7 @@ body .dynamic-search-button-slot .payment-calculator-offer-btn ~ .dynamic-search
   display: none;
 }
 
-/* General Button Overrides (To-do: put this somewhere global separate from SRP stuff) */
+/* General Button Overrides */
 
 body .sokal-btn {
   border-width: 0.15em;

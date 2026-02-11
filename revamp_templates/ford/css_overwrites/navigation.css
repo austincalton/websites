@@ -16,6 +16,35 @@
   background-repeat: no-repeat;
 } */
 
+/* MAKE A WISH ADDITIONS - use this as-needed depending on your site's existing setup */
+
+/*@media (min-width: 768px) and (max-width: 1214px) {
+  .maw-additional a {
+    margin-right: 15px;
+  }
+}
+
+@media (max-width: 575px) {
+  .maw-additional a {
+    max-width: 55px !important;
+    margin-left: 10px;
+  }
+}
+
+.maw-additional {
+	width: 15%;
+}
+
+.maw-additional a {
+  display: inline-block;
+  background-image: url(https://d2v1gjawtegg5z.cloudfront.net/uploads/files/000/366/000/original/CF-SP-121322-StarIcon-02.png?1675286501) !important;
+  height: 60px;
+  width: 115px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}*/
+
 /* Vehicle Model Dropdown */
 
 body .vehicle-model-dropdown .models-wrapper .model-container .model-text {

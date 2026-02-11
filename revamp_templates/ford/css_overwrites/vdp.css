@@ -21,7 +21,7 @@ a#couponModalBtn {
   color: white;
   padding: 12px 20px;
   margin-bottom: 10px;
--webkit-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
@@ -32,7 +32,7 @@ a#couponModalBtn:focus {
   background: #1700f4;
   border: 2px solid #1700f4;
   color: white;
-    -webkit-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }

@@ -3,6 +3,7 @@
 }
 
 /* SOLID BG MAP & HOURS */
+
 .footer-components .solid-background-map-and-hours-component .map-contact {
   background-color: var(--pcd);
   padding-top: 2rem;
@@ -12,7 +13,6 @@
 .footer-components .solid-background-map-and-hours-component .map-contact .content-box {
   max-width: 100%;
 }
-
 
 .footer-components .solid-background-map-and-hours-component .flex-row {
   flex-direction: row-reverse;
@@ -103,11 +103,12 @@
   background: rgba(255, 255, 255, 0.25);
   backdrop-filter: blur(10px);
 }
+
 .footer-components .solid-background-map-and-hours-component .search-bar .input-group .form-control:focus,
 .footer-components .solid-background-map-and-hours-component .search-bar .input-group .form-control:focus-visible {
   box-shadow: none;
 }
-  
+
 .footer-components .solid-background-map-and-hours-component .search-bar .input-group-btn:last-child > .btn:not(:last-child):not(.dropdown-toggle) {
   border-radius: 10px 0 0 10px;
   margin-left: 15px;
@@ -169,11 +170,8 @@
   }
 }
 
-
-
-
-
 /* DUPLICATE DEALER NAME MARQUEE INSIDE CUSTOM FOOTER CONTENT ITEM */
+
 .dealer-name-marquee .marquee-wrapper {
   width: 100%;
   overflow: hidden;
@@ -199,26 +197,25 @@
   left: 0;
 }
 
-
-
-
-
-
 /* FOOTER "GREY" LEFT ALIGNED */
+
 .footer-components .FooterGreyLeft {
   background: #ffffff;
   color: var(--pcd);
   padding-top: 0;
   --sokal-logo-svg: url("data:image/svg+xml;utf8, <svg xmlns='http://www.w3.org/2000/svg' width='140' height='26' viewBox='0 0 140 26' fill='none'><path d='M10.4734 11.7928C5.20116 10.6663 4.23704 9.43828 4.23704 7.439V7.37304C4.23704 5.2672 6.20587 3.80073 9.02718 3.80073C11.4781 3.80073 13.6042 4.60247 15.71 6.31758L15.9181 6.48503L17.7854 4.00877L17.5926 3.85147C14.9996 1.76593 12.4574 0.87793 9.09822 0.87793C4.43494 0.87793 1.05038 3.70939 1.05038 7.60645V7.67242C1.05038 11.4984 3.33889 13.4876 9.21493 14.7663C14.2283 15.8218 15.1772 17.0751 15.1772 19.0236V19.0896C15.1772 21.3121 13.112 22.8649 10.1486 22.8649C7.18521 22.8649 4.76984 21.9109 2.1921 19.5767L1.9942 19.3991L0 21.7587L0.187749 21.9261C3.13592 24.5597 6.27184 25.7877 10.0471 25.7877C14.9641 25.7877 18.3994 22.9258 18.3994 18.8207V18.7547C18.3994 15.086 16.0297 13.0055 10.4734 11.7978' fill='currentColor'/><path d='M32.9932 0.746094C29.6492 0.746094 26.493 2.05526 24.0979 4.43511C21.6978 6.82003 20.3785 9.9661 20.3785 13.2999C20.3785 20.3431 25.9196 25.8588 32.9983 25.8588C40.0769 25.8588 45.6181 20.3431 45.6181 13.2999C45.6181 9.9661 44.2937 6.81496 41.8986 4.43511C39.5035 2.05526 36.3422 0.746094 32.9983 0.746094M42.3045 13.305C42.3045 18.5112 38.1284 22.7432 32.9932 22.7432C27.858 22.7432 23.6818 18.5112 23.6818 13.305C23.6818 10.7729 24.6054 8.41336 26.285 6.65766C28.0052 4.85628 30.3901 3.86679 32.9932 3.86679C35.5963 3.86679 37.9812 4.85628 39.7014 6.65766C41.381 8.41336 42.3045 10.7729 42.3045 13.305Z' fill='currentColor'/><path d='M67.9853 25.1838L57.0096 13.3606L68.2339 1.21276H63.7584L52.1484 13.1881L63.6417 25.2751L63.7178 25.3563H67.9092H71.4713L74.181 19.3991H84.8624L87.5721 25.3563H91.1342L79.5192 0L67.9853 25.1838ZM75.5612 16.3443L79.5192 7.33744L83.4771 16.3443H75.5612Z' fill='currentColor'/><path d='M96.6855 22.3011V1.25293H93.3771V25.3559H107.047V22.3011H96.6855Z' fill='currentColor'/><path d='M52.1336 1.16699H48.5156V25.3308H52.1336V1.16699Z' fill='currentColor'/><path d='M122.925 1.25879H130.141L140 13.2443L130.141 25.2349H122.925L132.815 13.2443L122.925 1.25879Z' fill='currentColor'/><path d='M110.189 1.25879H117.409L127.269 13.2443L117.409 25.2349H110.189L120.084 13.2443L110.189 1.25879Z' fill='currentColor'/></svg>");        
 }
+
 .footer-components .FooterGreyLeft .footer-line-divide {
   background: #E5E5E5;
 }
+
 .footer-components .FooterGreyLeft .row:first-child,
 .footer-components .FooterGreyLeft .row:nth-child(6),
 .footer-components .FooterGreyLeft .sokal-white-logo {
   display: none;
 }
+
 .footer-components .FooterGreyLeft .container {
   max-width: 1500px;
   width: 100%;
@@ -227,16 +224,20 @@
   margin-left: auto;
   margin-right: auto;
 }
+
 .footer-components .FooterGreyLeft .row:nth-child(3) {
   margin-top: 15px;
   margin-bottom: 15px;
 }
+
 .footer-components .FooterGreyLeft .FooterGreyLeftMenu {
   margin-bottom: 15px;
 }
+
 .footer-components .FooterGreyLeft a {
   letter-spacing: 0;
 }
+
 .footer-components .FooterGreyLeft .FooterGreyLeftMenu a,
 .footer-components .FooterGreyLeft .footer-bottom .col-md-3.col-xs-12 .copyright,
 .footer-components .FooterGreyLeft .footer-bottom .col-md-3.col-xs-12 .copyright a,
@@ -246,34 +247,42 @@
   text-transform: capitalize;
   font-size: 1.5rem;
 }
+
 .footer-components .FooterGreyLeft .footer-bottom .col-md-3.col-xs-12 .copyright a {
   letter-spacing: -1px;
 }
+
 .footer-components .FooterGreyLeft .vehicle-disclaimer {
   font-size: 1.4rem;
   font-style: normal;
 }
+
 .footer-components .FooterGreyLeft .footer-disclaimer {
   color: var(--pcd);
   opacity: 0.6;
 }
+
 .footer-components .FooterGreyLeft .footer-social a {
   color: var(--sc);
 }
+
 .footer-components .FooterGreyLeft .footer-social i {
   font-size: 3.2rem;
 }
+
 .footer-components .FooterGreyLeft .footer-bottom .col-md-3.col-xs-12 {
   display: flex;
   align-items: center;
   column-gap: 15px;
 }
+
 .footer-components .FooterGreyLeft .footer-bottom .col-md-3.col-xs-12 a[href="https://www.gosokal.com/?utm_source=capital-theme.com&utm_medium=referral"] {
   position: relative;
   width: 14rem;
   height: 2.6rem;
   display: inline-block;
 }
+
 .footer-components .FooterGreyLeft .footer-bottom .col-md-3.col-xs-12 a[href="https://www.gosokal.com/?utm_source=capital-theme.com&utm_medium=referral"]::after {
   content: "";
   position: absolute;
@@ -288,21 +297,25 @@
   mask-position: center;
   mask-size: contain;        
 }
+
 @media (max-width: 575px) {
   .footer-components .FooterGreyLeft .FooterGreyLeftMenu {
     display: flex;
     flex-wrap: wrap;
     row-gap: 15px;
   }
+
   .footer-components .FooterGreyLeft .FooterGreyLeftMenu li {
     width: 50%;
     margin-right: 0;
   }
+
   .footer-components .FooterGreyLeft .footer-bottom .col-md-3.col-xs-12 {
     align-items: start;
     flex-direction: column;
     row-gap: 15px;
   }
+
   .footer-components .FooterGreyLeft .footer-bottom .col-md-3 {
   	margin-bottom: 0;
   }
