@@ -268,13 +268,13 @@
   align-items: center;
   column-gap: 15px;
 }
-.footer-components .FooterGreyLeft .footer-bottom .col-md-3.col-xs-12 a[href="https://www.gosokal.com/?utm_source=capital-theme.com&utm_medium=referral"] {
+.footer-components .FooterGreyLeft .footer-bottom .col-md-3.col-xs-12 a[href*="gosokal.com/?utm_source="] {
   position: relative;
   width: 14rem;
   height: 2.6rem;
   display: inline-block;
 }
-.footer-components .FooterGreyLeft .footer-bottom .col-md-3.col-xs-12 a[href="https://www.gosokal.com/?utm_source=capital-theme.com&utm_medium=referral"]::after {
+.footer-components .FooterGreyLeft .footer-bottom .col-md-3.col-xs-12 a[href*="gosokal.com/?utm_source="]::after {
   content: "";
   position: absolute;
   inset: 0;
