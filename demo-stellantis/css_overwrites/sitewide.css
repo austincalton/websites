@@ -1,6 +1,31 @@
-/* Default ADA page logo */
+/* CDJR DESIGN SETUP */
 
-img[src*="cloudfront.net/assets/ada_logo-"]
+html body {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  --sokal-pc-chrysler: #D50000;
+  --sc: #D50000;
+  --pcd: var(--sokal-pcd-chrysler);
+}
+
+.barlow-condensed-bold {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.text-upper {
+  text-transform: uppercase;
+}
+  
+/* END CDJR DESIGN SETUP */
+  
+
+  
+  /* Default ADA page logo */
+
+img[src="https://d2v1gjawtegg5z.cloudfront.net/assets/ada_logo-60d19c3b4c537e0f6dd75513ad8275a434ac418291f443fbae24be71a1cf6e7b.png"]
 {
   -webkit-filter: grayscale(1);
   filter: grayscale(1);
@@ -14,7 +39,7 @@ img[src*="cloudfront.net/assets/ada_logo-"]
 .row > .col-md-4 > ul > a + ul > li > a,
 .row > .col-xs-12 > .row > .col-xs-6 > a,
 .row > .col-xs-12 > .row > .col-xs-4 > a {
-  color: #00095b;
+  color: #D50000;
 }
 
 /* Default Form Styles */
@@ -78,7 +103,7 @@ input.compare-vehicle-id[type="checkbox"] {
 }
 input[type="radio"]:checked::after,
 input[type="checkbox"]:checked::after {
-  background-color: #00095b;
+  background-color: #D50000;
 }
 input[type="checkbox"]:checked::after {
   background-image: url(https://d2v1gjawtegg5z.cloudfront.net/uploads/files/000/228/768/original/ss-gizmo-check-sm--white.png?1659970343);
@@ -101,17 +126,17 @@ input:disabled {
 .has-error select,
 .has-error textarea {
   background-color: #999999 !important;
-  border: solid 2px #00095b !important;
-  color: #00095b !important;
+  border: solid 2px #D50000 !important;
+  color: #D50000 !important;
 }
 .has-error input::placeholder,
 .has-error select::placeholder,
 .has-error textarea::placeholder {
-  color: #00095b !important;
+  color: #D50000 !important;
 }
 .has-error label,
 .has-error .field-error-message {
-  color: #00095b !important;
+  color: #D50000 !important;
 }
 .streakform > .col-md-push-6 > .form-top-text + .row {
   margin-top: 45px;
@@ -149,8 +174,8 @@ input:disabled {
 .streakform .btn-primary:hover,
 .streakform .btn-primary:active,
 .streakform .btn-primary:focus {
-  background-color: #00095b;
-  border-color: #00095b;
+  background-color: #D50000;
+  border-color: #D50000;
 }
 @media (max-width: 991px) {
   .streakform > .col-md-push-6 {
@@ -182,8 +207,6 @@ input:disabled {
 .service-coupon .service-coupon-body .coupon-text p,
 .service-coupon .service-coupon-body .coupon-text h1,
 .service-coupon .service-coupon-body .coupon-text span {
-  font-family: FordAntenna-Regular, "Helvetica Neue", Helvetica, Arial,
-    sans-serif !important;
   font-weight: normal !important;
   color: #ffffff !important;
 }
@@ -199,7 +222,7 @@ input:disabled {
 }
 .service-coupon .coupon-footer .get-coupon-btn {
   border: 0px;
-  color: #00095b;
+  color: #D50000;
   transition: all 0.3s ease;
 }
 .service-coupon .coupon-footer .get-coupon-btn:hover,
@@ -216,7 +239,7 @@ input:disabled {
 }
 .service-coupon .service-coupon-body .coupon-title a,
 .service-coupon .service-coupon-body .coupon-title h3 {
-  color: #00095b;
+  color: #D50000;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
@@ -255,7 +278,7 @@ input:disabled {
 .vehicle-prices > div[class="col-xs-12"] > h3 {
   width: 100%;
   text-align: center;
-  color: #00095b;
+  color: #D50000;
 }
 
 .single-stacked-price > h3:not([class=""]) {
@@ -367,10 +390,10 @@ body .active-template-price-block .stacked-srp-prices > .col-xs-6 {
 
 /* COLOR PALETTE */
 .primary-bg--blue {
-  background-color: #00095b;
+  background-color: #D50000;
 }
 .primary-color--blue {
-  color: #00095b;
+  color: #D50000;
 }
 .bg-white {
   background-color: #ffffff;
@@ -440,7 +463,7 @@ body .active-template-price-block .stacked-srp-prices > .col-xs-6 {
 }
 /* BUTTONS */
 .primary-btn {
-  background-color: #00095b;
+  background-color: #D50000;
   color: #ffffff;
   font-size: 16px;
   font-weight: 500;
@@ -466,12 +489,12 @@ body .active-template-price-block .stacked-srp-prices > .col-xs-6 {
 .secondary-btn,
 body .vehicle-buttons .payment-calculator-offer-btn {
   background-color: #ffffff;
-  color: #00095b;
+  color: #D50000;
   font-size: 16px;
   font-weight: 500;
   padding: 10px 34px;
   border-radius: 30px;
-  border: 1px solid #00095b;
+  border: 1px solid #D50000;
   margin: 30px 0;
   -webkit-transition: 0.3s all ease;
   -o-transition: 0.3s all ease;
@@ -482,7 +505,7 @@ body .vehicle-buttons .payment-calculator-offer-btn {
 .secondary-btn:active,
 body .vehicle-buttons .payment-calculator-offer-btn:hover,
 body .vehicle-buttons .payment-calculator-offer-btn:active {
-  background-color: #00095b;
+  background-color: #D50000;
   color: #ffffff;
   text-decoration: none;
 }
@@ -499,7 +522,7 @@ body .vehicle-model-dropdown .search-btns .btn,
   .col-xs-8.col-xs-offset-2.col-sm-4.col-sm-offset-4.col-md-4.col-md-offset-4
   .appointment-btn,
 .btn-success {
-  background-color: #00095b;
+  background-color: #D50000;
   color: #ffffff;
   font-size: 16px;
   font-weight: 500;
@@ -543,9 +566,9 @@ body .vehicle-model-dropdown .search-btns .btn:active {
   text-decoration: none;
 }
 #payment-calculator-offer .payment-btn-primary {
-  background-color: #00095b !important;
+  background-color: #D50000 !important;
   color: #ffffff !important;
-  border-color: #00095b !important;
+  border-color: #D50000 !important;
 }
 #payment-calculator-offer .payment-btn-primary:hover,
 #payment-calculator-offer .payment-btn-primary:focus,
@@ -555,13 +578,13 @@ body .vehicle-model-dropdown .search-btns .btn:active {
 }
 #payment-calculator-offer .payment-btn-secondary {
   background-color: #ffffff !important;
-  color: #00095b !important;
-  border-color: #00095b !important;
+  color: #D50000 !important;
+  border-color: #D50000 !important;
 }
 #payment-calculator-offer .payment-btn-secondary:hover,
 #payment-calculator-offer .payment-btn-secondary:focus,
 #payment-calculator-offer .payment-btn-secondary:active {
-  background-color: #00095b !important;
+  background-color: #D50000 !important;
   color: #ffffff !important;
 }
 .unlock-price-button,
@@ -624,7 +647,7 @@ body .cn-btn-bn1 {
 .service-coupons .service-coupon,
 .service-coupon .service-coupon-body,
 .service-coupons .service-coupon .service-coupon-body .coupon-offer {
-  background: #00095b;
+  background: #D50000;
   color: #ffffff;
 }
 
@@ -669,7 +692,7 @@ body .cn-btn-bn1 {
 }
 
 .service-coupons .service-buttons-container .appointment-btn {
-  background-color: #00095b !important;
+  background-color: #D50000 !important;
   border-bottom: 1px solid #ffffff;
   width: 75%;
   margin: 10px auto;
@@ -677,7 +700,7 @@ body .cn-btn-bn1 {
 
 .service-coupons .service-buttons-container .appointment-btn:hover {
   color: #ffffff;
-  border-bottom-color: #00095b;
+  border-bottom-color: #D50000;
 }
 
 .service-coupon .coupon-footer .disclaimer-link:hover {
@@ -781,7 +804,7 @@ body .cn-btn-bn1 {
 */
 .form--style-base .ajax-form-submit-btn {
   display: block;
-  background-color: #00095b;
+  background-color: #D50000;
   color: #ffffff;
   font-size: 16px;
   font-weight: 500;
@@ -814,12 +837,12 @@ body .cn-btn-bn1 {
 body .vehicle-index-buttons .btn,
 body .vehicle-show-buttons .btn {
   background-color: #ffffff;
-  color: #00095b;
+  color: #D50000;
   font-size: 16px;
   font-weight: 500;
   padding: 10px 34px;
   border-radius: 30px;
-  border: 1px solid #00095b;
+  border: 1px solid #D50000;
   -webkit-transition: 0.3s all ease;
   -o-transition: 0.3s all ease;
   -moz-transition: all 0.3s ease;
@@ -831,7 +854,7 @@ body .vehicle-index-buttons .btn:active,
 body .vehicle-show-buttons .btn:hover,
 body .vehicle-show-buttons .btn:active,
 body .vehicle-show-buttons .btn:focus {
-  background-color: #00095b;
+  background-color: #D50000;
   color: #ffffff;
   text-decoration: none;
 }
@@ -852,7 +875,7 @@ body .vehicle-show-buttons .btn:focus {
   background: #1700f4;
 }
 .mo-offer-content .send-my-offer {
-  background: #00095b;
+  background: #D50000;
 }
 .mo-offer-content .send-my-offer:hover,
 .mo-offer-content .send-my-offer:focus,
@@ -868,10 +891,10 @@ body .vehicle-show-buttons .btn:focus {
 }
 
 .search-results-btn:hover {
-  background-color: #00095b;
+  background-color: #D50000;
   color: white;
   border: 2px solid;
-  border-color: #00095b;
+  border-color: #D50000;
 }
 /* Make a Wish Logo for Header and Footer */
 .maw-additional a {
@@ -899,7 +922,11 @@ body .vehicle-show-buttons .btn:focus {
     min-height: 500px;
   }
 }
-
+/* Hididng Second Brayan Perez Photo */
+.employee-section .employee-img img[src="https://d2v1gjawtegg5z.cloudfront.net/employees/experience_logos/000/020/705/original/BIGMEXICANO.jpg?1670256047"]
+{
+  display: none;
+}
 /* Carnow CTA CSS */
 .cn-button-container a[data-label="TEXT US"] {
   display: none !important;
@@ -908,12 +935,12 @@ body .vehicle-show-buttons .btn:focus {
   display: none !important;
 }
 .cn-button-container a.cn-buy-now {
-  background-color: #00095b;
+  background-color: #D50000;
   font-size: 16px;
   font-weight: 500;
   padding: 10px 34px;
   border-radius: 30px;
-  border: 1px solid #00095b;
+  border: 1px solid #D50000;
   -webkit-transition: 0.3s all ease;
   -o-transition: 0.3s all ease;
   -moz-transition: all 0.3s ease;
@@ -928,15 +955,15 @@ body .vehicle-show-buttons .btn:focus {
 }
 body .cn-button-container .cn-bn1 {
   padding: 0px !important;
-  color: #00095b;
+  color: #D50000;
   background-color: transparent !important;
 }
 .cn-bn1 > span {
   padding: 0px !important;
-  color: #00095b;
+  color: #D50000;
 }
 
-/* SITEWIDE - New Capital Theme Start - */
+/* SITEWIDE - NEW - */
 
 body {
   --sokal-core-color-neutral-125: #F3F3F3;
@@ -953,11 +980,11 @@ body {
 
 body #srp-options-filtering .toggle-vehicle-options-filter,
 body .vehicle-index-page .filter-menu-show-more-btn .show-more-text {
-  font-family: FordF1-Bold, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Barlow Condensed", sans-serif;
 }
 
 body .active-template-vehicle-buttons .search-button {
-  font-family: FordF1-Bold, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Barlow Condensed", sans-serif;
 }
 
 /* SRP Misc */
@@ -1136,14 +1163,14 @@ body .vehicle-filter-menu .filter-list label {
 }
 
 body .vehicle-filter-menu .sort-menu-container .sort-menu-mobile-row button.clear-all {
-  background-color: var(--sokal-pcd-ford);
-  border-color: var(--sokal-pcd-ford);
+  background-color: var(--sokal-pcd-chrysler);
+  border-color: var(--sokal-pcd-chrysler);
   border-radius: 7px 0 0 7px;
 }
 
 body .vehicle-filter-menu .sort-menu-container .sort-menu-mobile-row button#mobile-show-results {
-  color: var(--sokal-pcd-ford);
-  border-color: var(--sokal-pcd-ford);
+  color: var(--sokal-pcd-chrysler);
+  border-color: var(--sokal-pcd-chrysler);
   border-radius: 0 7px 7px 0;
 }
 
@@ -1319,7 +1346,7 @@ body .wl-vehicles .wl-vehicle-unit-container .tile-vehicle-title h5 {
 }
 
 body .wl-vehicles .wl-vehicle-unit-container .tile-vehicle-title h4 {
-  color: var(--sokal-sc-ford);
+  color: var(--sokal-pc-chrysler);
 }
 
 body .wl-vehicles .wl-vehicle-unit-container .wl-vehicle-link .sokal-btn-primary:hover * {
@@ -1425,12 +1452,10 @@ body .vehicle-index-page #vehicles {
   }
 }
 
-/* Full-width Elements Within SRP Grid */
+/* To-do: Define selectors here for banners that need to span full-width */
 
-body #vehicles .some-element,
-body .infinite-paginate-ui,
-#dealer_otn_container,
-.flexslider-interval-srp-banners {
+body .vehicle-index-page #vehicles .some-element,
+body .vehicle-index-page .infinite-paginate-ui {
   grid-column: 1 / -1;
 }
 
@@ -1454,7 +1479,7 @@ body #srp-options-filtering .toggle-vehicle-options-filter {
 body #srp-options-filtering .toggle-vehicle-options-filter span.toggle-vehicle-options-filter-label,
 body #srp-options-filtering .toggle-vehicle-options-filter span.toggle-vehicle-options-filter-count,
 body #srp-options-filtering .toggle-vehicle-options-filter span.toggle-vehicle-options-filter-checkmark {
-  color: var(--sokal-pcd-ford);
+  color: var(--sokal-pcd-chrysler);
 }
 
 body #srp-options-filtering .toggle-vehicle-options-filter .toggle-vehicle-options-filter-count, body #srp-options-filtering .toggle-vehicle-options-filter .toggle-vehicle-options-filter-checkmark {
@@ -1486,7 +1511,7 @@ body #srp-options-filtering .toggle-vehicle-options-filter-checked:hover {
 }
 
 body #srp-options-filtering .toggle-vehicle-options-filter .toggle-vehicle-options-filter-label {
-  color: var(--sokal-pcd-ford);
+  color: var(--sokal-pcd-chrysler);
 }
 
 /* vehicle-unit-container */
@@ -1621,10 +1646,8 @@ body .active-template-price-block .stacked-vehicle-prices > [class*="col-"] > * 
 }
 
 body .active-template-price-block .vehicle-prices > .lowest-price[class*="col-"] > *,
-body .active-template-price-block .vehicle-prices > .single-stacked-price[class*="col-"] > *,
-body .active-template-price-block .stacked-vehicle-prices > .lowest-price[class*="col-"] > *,
-body .active-template-price-block .stacked-vehicle-prices > .single-stacked-price[class*="col-"] > * {
-  color: var(--sokal-pcd-ford);
+body .active-template-price-block .stacked-vehicle-prices > .lowest-price[class*="col-"] > * {
+  color: var(--sokal-pcd-chrysler);
 }
 
 /* SRP Tabbed Payment Block */
@@ -1677,23 +1700,7 @@ body .dynamic-search-button-slot .payment-calculator-offer-btn ~ .dynamic-search
   display: none;
 }
 
-/* Vehicle Features Modal */
-
-#vehicle-options-modal .vehicle-options-block h2 {
-  background-color: transparent;
-  color: #00095b;
-  text-align: left;
-}
-
-#vehicle-options-modal .table > tbody > tr > td {
-  border: 0;
-}
-
-#vehicle-options-modal .table-striped > tbody > tr:nth-of-type(odd) {
-  background-color: transparent;
-}
-
-/* General Button Overrides */
+/* General Button Overrides (To-do: put this somewhere global separate from SRP stuff) */
 
 body .sokal-btn {
   border-width: 0.15em;
@@ -1743,7 +1750,7 @@ body .sokal-btn-primary:hover {
 }
 
 body .sokal-btn-secondary:hover {
-  border-color: var(--sokal-primary-color-dark, var(--sokal-pcd-ford));
+  border-color: var(--sokal-primary-color-dark, var(--sokal-pcd-chrysler));
 }
 
 body .active-template-vehicle-buttons .search-button {
@@ -1757,5 +1764,5 @@ body .active-template-vehicle-buttons .search-button {
 
 body .active-template-vehicle-buttons .search-button:hover {
   background: #ffffff;
-  border-color: var(--sokal-primary-color-dark, var(--sokal-pcd-ford));
+  border-color: var(--sokal-primary-color-dark, var(--sokal-pcd-chrysler));
 }
