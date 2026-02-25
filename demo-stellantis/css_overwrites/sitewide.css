@@ -8,6 +8,7 @@ body {
   --sokal-pc-chrysler: #D50000;
   --sc: #D50000;
   --pcd: var(--sokal-pcd-chrysler);
+  --sokal-primary-color-accent: #D50000;
 }
 
 .barlow-condensed-bold {
@@ -23,10 +24,9 @@ body {
   
 
   
-  /* Default ADA page logo */
+/* Default ADA page logo */
 
-img[src="https://d2v1gjawtegg5z.cloudfront.net/assets/ada_logo-60d19c3b4c537e0f6dd75513ad8275a434ac418291f443fbae24be71a1cf6e7b.png"]
-{
+img[src*="cloudfront.net/assets/ada_logo-"] {
   -webkit-filter: grayscale(1);
   filter: grayscale(1);
 }
@@ -389,12 +389,6 @@ body .active-template-price-block .stacked-srp-prices > .col-xs-6 {
 /*-------------------------------*/
 
 /* COLOR PALETTE */
-.primary-bg--blue {
-  background-color: #D50000;
-}
-.primary-color--blue {
-  color: #D50000;
-}
 .bg-white {
   background-color: #ffffff;
 }
@@ -406,30 +400,6 @@ body .active-template-price-block .stacked-srp-prices > .col-xs-6 {
 }
 .color-gray {
   color: #bfbfbf;
-}
-/*
-.sokal-color-light-blue {
-  color: #4298b5;
-}
-*/
-.alt-bg--blue {
-  background-color: #00142e;
-}
-.alt-color--blue {
-  color: #00142e;
-}
-.alt-bg--highlight {
-  background-color: #1700f4;
-}
-.alt-color--highlight {
-  color: #1700f4;
-}
-.bg--blue-gradient {
-  background: linear-gradient(
-    270deg,
-    rgba(0, 9, 91, 1) 0%,
-    rgba(0, 20, 46, 1) 100%
-  );
 }
 
 /* SPACING */
@@ -478,7 +448,7 @@ body .active-template-price-block .stacked-srp-prices > .col-xs-6 {
 }
 .primary-btn:hover,
 .primary-btn:active {
-  background-color: #1700f4;
+  background-color: #D50000;
   color: #ffffff;
   text-decoration: none;
 }
@@ -545,24 +515,24 @@ body .vehicle-model-dropdown .search-btns .btn {
   .col-xs-8.col-xs-offset-2.col-sm-4.col-sm-offset-4.col-md-4.col-md-offset-4
   .appointment-btn:hover,
 .btn-success:hover {
-  background-color: #1700f4 !important;
+  background-color: #D50000 !important;
   color: #ffffff !important;
-  border-color: #1700f4 !important;
+  border-color: #D50000 !important;
   text-decoration: none !important;
 }
 
 .btn-success:active,
 .btn-success:focus {
-  background-color: #1700f4 !important;
-  border-color: #1700f4 !important;
+  background-color: #D50000 !important;
+  border-color: #D50000 !important;
   color: #ffffff !important;
 }
 
 body .vehicle-model-dropdown .search-btns .btn:hover,
 body .vehicle-model-dropdown .search-btns .btn:active {
-  background-color: #1700f4 !important;
+  background-color: #D50000 !important;
   color: #ffffff !important;
-  border-color: #1700f4 !important;
+  border-color: #D50000 !important;
   text-decoration: none;
 }
 #payment-calculator-offer .payment-btn-primary {
@@ -573,7 +543,7 @@ body .vehicle-model-dropdown .search-btns .btn:active {
 #payment-calculator-offer .payment-btn-primary:hover,
 #payment-calculator-offer .payment-btn-primary:focus,
 #payment-calculator-offer .payment-btn-primary:active {
-  background-color: #1700f4 !important;
+  background-color: #D50000 !important;
   color: #ffffff !important;
 }
 #payment-calculator-offer .payment-btn-secondary {
@@ -595,7 +565,7 @@ body .vehicle-model-dropdown .search-btns .btn:active {
 }
 .unlock-price-button:hover,
 .get-price-button:hover {
-  /*	border: 1px solid #1700F4;*/
+  /*	border: 1px solid #D50000;*/
   color: #ffffff !important;
 }
 body .unlock-price-button:focus,
@@ -817,7 +787,7 @@ body .cn-btn-bn1 {
   transition: 0.3s all ease;
 }
 .form--style-base .ajax-form-submit-btn:hover {
-  background-color: #1700f4;
+  background-color: #D50000;
   color: #ffffff;
   text-decoration: none;
 }
@@ -825,9 +795,9 @@ body .cn-btn-bn1 {
   font-size: 12px;
 }
 .contact-method-btn.active {
-  background: #1700f4;
+  background: #D50000;
   color: #ffffff;
-  border: 1px solid #1700f4;
+  border: 1px solid #D50000;
 }
 /* FORM STYLING END*/
 /*-----------------*/
@@ -872,7 +842,7 @@ body .vehicle-show-buttons .btn:focus {
   }
 }
 .mo-offer-content .payment-block {
-  background: #1700f4;
+  background: #D50000;
 }
 .mo-offer-content .send-my-offer {
   background: #D50000;
@@ -880,7 +850,7 @@ body .vehicle-show-buttons .btn:focus {
 .mo-offer-content .send-my-offer:hover,
 .mo-offer-content .send-my-offer:focus,
 .mo-offer-content .send-my-offer:active {
-  background: #1700f4;
+  background: #D50000;
 }
 /* NEWER ADDITIONS END */
 
@@ -949,7 +919,7 @@ body .vehicle-show-buttons .btn:focus {
   width: 100%;
 }
 .cn-button-container a.cn-buy-now:hover {
-  background-color: #1700f4;
+  background-color: #D50000;
   color: #ffffff !important;
   text-decoration: none;
 }
@@ -1062,7 +1032,7 @@ body .vehicle-index-page {
 }
 
 body .vehicle-index-row-vfound-vcount {
-  --vehicles-found-background-color: #066FEF;
+  --vehicles-found-background-color: #D50000;
   --vehicles-found-color: #ffffff;
 }
 
@@ -1194,7 +1164,7 @@ body .vehicle-filter-menu form[action="/vehicles"] input.form-control:not(:focus
 
 body .vehicle-filter-menu form[action="/vehicles"] .input-group-btn button {
   border-radius: 0 7px 7px 0;
-  color: #066FEF;
+  color: #D50000;
 }
 
 @media (max-width: 991px) {
@@ -1310,17 +1280,18 @@ body .vehicle-filter-menu form[action="/vehicles"] .input-group-btn button {
 /* SRP Wishlist */
 
 body .vehicle-sort-menu-modern .wl-section .wishlist-bar {
-  background-color: #066FEF;
+  background-color: #D50000;
   color: #fff;
-  border-color: #066FEF;
+  border-color: #D50000;
 }
 
 body .vehicle-sort-menu-modern .wl-section .wishlist-bar .wl-box {
   background-color: #F5F5F5;
-  color: #066FEF;
+  color: #D50000;
 }
 
 body .vehicle-sort-menu-modern .wl-section .wishlist-bar a, 
+body .vehicle-sort-menu-modern .wl-section .wishlist-bar a:hover, 
 body .vehicle-sort-menu-modern .wl-section .wishlist-bar a:visited {
   color: #ffffff;
 }
@@ -1452,10 +1423,12 @@ body .vehicle-index-page #vehicles {
   }
 }
 
-/* To-do: Define selectors here for banners that need to span full-width */
+/* Full-width Elements Within SRP Grid */
 
-body .vehicle-index-page #vehicles .some-element,
-body .vehicle-index-page .infinite-paginate-ui {
+body #vehicles .some-element,
+body .infinite-paginate-ui,
+#dealer_otn_container,
+.flexslider-interval-srp-banners {
   grid-column: 1 / -1;
 }
 
@@ -1473,7 +1446,7 @@ body #srp-options-filtering .toggle-vehicle-options-filter {
   border-radius: 10px;
   border: solid 2px var(--sokal-core-color-neutral-200);
   flex-flow: row-reverse nowrap;
-  color: #066FEF;
+  color: #D50000;
 }
 
 body #srp-options-filtering .toggle-vehicle-options-filter span.toggle-vehicle-options-filter-label,
@@ -1487,8 +1460,8 @@ body #srp-options-filtering .toggle-vehicle-options-filter .toggle-vehicle-optio
 }
 
 body #srp-options-filtering .toggle-vehicle-options-filter-checked {
-  background: #066FEF;
-  border-color: #066FEF;
+  background: #D50000;
+  border-color: #D50000;
   color: #ffffff;
 }
 
@@ -1499,7 +1472,7 @@ body #srp-options-filtering .toggle-vehicle-options-filter-checked span.toggle-v
 }
 
 body #srp-options-filtering .toggle-vehicle-options-filter svg path {
-  stroke: #066FEF;
+  stroke: #D50000;
 }
 
 body #srp-options-filtering .toggle-vehicle-options-filter-checked svg path {
@@ -1507,11 +1480,16 @@ body #srp-options-filtering .toggle-vehicle-options-filter-checked svg path {
 }
 
 body #srp-options-filtering .toggle-vehicle-options-filter-checked:hover {
-  background: #066FEF;
+  background: #D50000;
 }
 
 body #srp-options-filtering .toggle-vehicle-options-filter .toggle-vehicle-options-filter-label {
   color: var(--sokal-pcd-chrysler);
+}
+
+body #srp-options-filtering .toggle-vehicle-options-filter-label, 
+body #srp-options-filtering .toggle-vehicle-options-filter-count {
+  font-size: 1.2em;
 }
 
 /* vehicle-unit-container */
@@ -1584,7 +1562,7 @@ body .active-template-vehicle-thumb .wishlist-modal-trigger svg.icon-heart-outli
 
 @media (min-width: 768px) {
   body .active-template-price-block {
-    min-height: 105px;
+    min-height: 78px;
   }
 
   /* Use this as needed when new vehicle price blocks are large */
@@ -1646,7 +1624,9 @@ body .active-template-price-block .stacked-vehicle-prices > [class*="col-"] > * 
 }
 
 body .active-template-price-block .vehicle-prices > .lowest-price[class*="col-"] > *,
-body .active-template-price-block .stacked-vehicle-prices > .lowest-price[class*="col-"] > * {
+body .active-template-price-block .vehicle-prices > .single-stacked-price[class*="col-"] > *,
+body .active-template-price-block .stacked-vehicle-prices > .lowest-price[class*="col-"] > *,
+body .active-template-price-block .stacked-vehicle-prices > .single-stacked-price[class*="col-"] > * {
   color: var(--sokal-pcd-chrysler);
 }
 
@@ -1663,7 +1643,7 @@ body .vehicle-unit-finance-lease[data-payment-props="  "] .tabbed-payment-block-
 }
 
 body .active-template-tabbed-payment-and-features-block .sokal-modern-tabs-track-container li:not(.active) a:hover {
-  background-color: var(--sokal-action-color-blue);
+  background-color: #D50000;
   opacity: 1;
   color: #ffffff;
   border-radius: 0.3em;
@@ -1672,6 +1652,11 @@ body .active-template-tabbed-payment-and-features-block .sokal-modern-tabs-track
 body .active-template-tabbed-payment-and-features-block .sokal-modern-tabs-track-container li a {
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
+}
+
+body .tabbed-payment-block-template-term-block, 
+body .vehicle-unit-container .tabbed-payment-block-template-term-block * {
+  color: #D50000;
 }
 
 /* SRP Vehicle Feature Icons */
@@ -1700,7 +1685,23 @@ body .dynamic-search-button-slot .payment-calculator-offer-btn ~ .dynamic-search
   display: none;
 }
 
-/* General Button Overrides (To-do: put this somewhere global separate from SRP stuff) */
+/* Vehicle Features Modal */
+
+#vehicle-options-modal .vehicle-options-block h2 {
+  background-color: transparent;
+  color: #D50000;
+  text-align: left;
+}
+
+#vehicle-options-modal .table > tbody > tr > td {
+  border: 0;
+}
+
+#vehicle-options-modal .table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: transparent;
+}
+
+/* General Button Overrides */
 
 body .sokal-btn {
   border-width: 0.15em;
