@@ -1,0 +1,34 @@
+<script>
+  (function(){
+    const s = {
+      init: function() {
+        s.handleEmptyElements();
+      },
+
+      handleEmptyElements: function() {
+        s.$elementsToCheck = $('.hide-if-empty-parent');
+        if (!s.$elementsToCheck.length) return;
+
+        s.$elementsToCheck.each(function(){
+          s.hideIfEmpty($(this));
+        });
+      },
+
+      hideIfEmpty: function($parentContainer) {
+        const $targets = $parentContainer.find('.hide-if-empty');
+        if (!$targets.length) return;
+
+        $targets.each(function(){
+          const empty = $(this)[0].childNodes.length == 0;
+          if (empty) $(this).addClass('hidden');
+        });
+
+        const emptyParent = $targets.length == $targets.filter('.hidden').length;
+        if (emptyParent) $parentContainer.addClass('hidden');
+      }
+    }
+
+    $(document).ready(s.init);
+
+  })(jQuery)
+</script>
