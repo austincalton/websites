@@ -1,0 +1,92 @@
+<div id="MazdaHeroControls" class="container-fluid hidden">
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="form-horizontal center-block">
+        <div class="form-group mazdaHero-slide-override">
+          <label class="col-xs-12 col-sm-3 control-label" for="mazda_hero_slide_override_desktop">Update Desktop Hero Image ( jpg / png ):</label>
+          <div class="col-xs-12 col-sm-9">
+            <input class="form-control" type="file" id="mazdaHeroSlideOverride" name="mazda_hero_slide_override_desktop" accept="image/png, image/jpeg, image/gif">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  
+  #MazdaHeroControls {
+    margin: 50px auto;
+  }
+  
+  #MazdaHeroControls .form-horizontal {
+    max-width: 1000px;
+  }
+
+  @media (min-width: 992px) {
+    .hero-banners-with-dropdown-search-component.has-custom-upload .set-above-fold-height,
+    .hero-banners-with-dropdown-search-component.original-specs-desktop.has-custom-upload .set-above-fold-height {
+      min-height: unset;
+      max-height: unset;
+      height: auto;
+      aspect-ratio: unset;
+    }
+  }
+
+</style>
+
+<script>
+  (function($){
+    const s = {
+      init: function() {
+        if (!location.search.includes('edit_desktop_banner')) return;
+        s.defineProps();
+
+        s.$component.find('.hero-banners-with-dropdown-search-component').addClass('has-custom-upload');
+        s.updateSlideContent();
+        s.appendFileUploads();
+      },
+
+      defineProps: function() {
+        s.$component = $('.mazda-hero-banners-with-faceted-search');
+        s.$carousel = s.$component.find('.carousel').first();
+        s.$currentSlideImage = 'https://d2v1gjawtegg5z.cloudfront.net/uploads/files/001/965/241/original/mazda-hero-banner-placeholder-desktop.jpg?1773256216';
+      },
+
+      appendFileUploads: function() {
+        $('#MazdaHeroControls').insertAfter('.mazda-hero-banners-with-faceted-search');
+        $('#MazdaHeroControls').removeClass('hidden');
+        s.handleSlideBgUpdate();
+      }, 
+
+      handleSlideBgUpdate: function() {
+        $('#mazdaHeroSlideOverride').change(function(){
+          const file = $(this)[0].files[0];
+          s.$currentSlideImage = URL.createObjectURL(file);
+          s.updateSlideContent();
+        });
+      },
+
+      updateSlideContent: function() {
+        const $slides = s.$carousel.find('.carousel-inner .item');
+        const newImage = s.getNewImage();
+
+        $slides.each(function(){
+          $(this).find(' > div:nth-child(3)').empty();
+          $(this).find(' > div:nth-child(3)').append(newImage);
+        });
+      },
+
+      getNewImage: function() {
+        const template = `
+        <div class="sokal-media-container-custom"><img class="sokal-block sokal-mx-auto sokal-max-w-full" src="${s.$currentSlideImage}" style="" alt="banner-desktop-bg"></div>
+        `;
+        return template;
+      }
+
+    }
+
+    $(document).ready(s.init);
+
+  })(jQuery)
+</script>
