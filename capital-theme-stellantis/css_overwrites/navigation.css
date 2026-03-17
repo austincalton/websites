@@ -1,0 +1,126 @@
+/* CDJR TWEAKS */
+
+#nav-right-with-contact-v-extended-toolbar .nav-right-with-contact {
+  --bg-color: var(--sokal-primary-color-dark);
+  --text-color: var(--sokal-primary-color-light);
+}
+  
+body #nav-right-with-contact-v-extended-toolbar .nav-right-with-contact .nav-contact-toolbar, 
+body #nav-right-with-contact-v-extended-toolbar .nav-right-with-contact .mobile-nav-utility-bar {
+  border-bottom: 1px solid var(--sokal-primary-color-light);
+}
+
+body #nav-right-with-contact-v-extended-toolbar .nav-right-with-contact #desktop-header {
+  border-bottom: 1px solid #737373;
+}
+
+body #nav-right-with-contact-v-extended-toolbar .click-through-mobile-contact-bar {
+  --nav-border-bottom-color: #737373;
+}
+  
+body #nav-right-with-contact-v-extended-toolbar .nav-right-with-contact .nav-contact-toolbar[data-extended-version="true"] .row-no-gutters [class*="col-"] .vcenter {
+  border-color: var(--sokal-primary-color-dark);
+}
+
+body #nav-right-with-contact-v-extended-toolbar .nav-right-with-contact .nav-contact-toolbar,
+body #nav-right-with-contact-v-extended-toolbar .nav-right-with-contact .mobile-nav-utility-bar {
+  --pcd: var(--sokal-primary-color-light);
+  --pcl: var(--sokal-primary-color-dark);
+  --text-color: var(--sokal-primary-color-dark);
+}
+
+body #nav-right-with-contact-v-extended-toolbar .nav-right-with-contact .nav-contact-toolbar a, 
+body #nav-right-with-contact-v-extended-toolbar .nav-right-with-contact .mobile-nav-utility-bar a {
+  --text-color: var(--sokal-primary-color-dark);
+  color: var(--text-color);
+}
+  
+#desktop-phone-menu {
+  list-style-type: none;
+}
+
+body #nav-right-with-contact-v-extended-toolbar .nav-right-with-contact>.visible-sm.visible-xs .mobile-dealer-logo>a {
+  width: 125px;
+}
+@media (min-width: 576px) {
+  body #nav-right-with-contact-v-extended-toolbar .nav-right-with-contact>.visible-sm.visible-xs .mobile-dealer-logo>a {
+    width: 150px;
+  }
+}
+  
+#nav-right-with-contact-v-extended-toolbar .nav-right-with-contact header .container .header-wrapper #desktop-menu>li.dropdown>a {
+  position: relative;
+  padding: 10px 18px;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+#nav-right-with-contact-v-extended-toolbar .nav-right-with-contact header .container .header-wrapper #desktop-menu>li>a:not(a[href="#dropdown-search"])::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 46%;
+  width: 9px;
+  height: 9px;
+  border-right: 2px solid #737373;
+  border-bottom: 2px solid #737373;
+  transform: translateY(-50%) rotate(45deg);
+  transition: transform 0.3s ease;
+  transform-origin: center;
+}
+
+#nav-right-with-contact-v-extended-toolbar .nav-right-with-contact header .container .header-wrapper #desktop-menu>li.dropdown:hover > a::before {
+  transform: translateY(-50%) rotate(225deg);
+}
+
+.nav-right-with-contact header .container .header-wrapper #desktop-menu > li:last-of-type a[href="#dropdown-search"] {
+  padding-left: 18px;
+  color: #737373;
+}
+
+/* CDJR TWEAKS END */  
+
+
+/* Vehicle Model Dropdown */
+
+body .vehicle-model-dropdown .models-wrapper .model-container .model-text {
+  letter-spacing: 0px;
+}
+
+/* EXTENDED NAV TOOLBAR */
+
+#nav-right-with-contact-v-extended-toolbar .nav-right-with-contact {
+  --bg-color-hovered: var(--sokal-primary-color);
+}
+
+#nav-right-with-contact-v-extended-toolbar .nav-right-with-contact header .container .header-wrapper #desktop-menu>li>a:hover::after,
+#nav-right-with-contact-v-extended-toolbar .nav-right-with-contact header .container .header-wrapper #desktop-menu>li>a:focus::after {
+  background-color: var(--sokal-primary-color);
+}
+
+#nav-right-with-contact-v-extended-toolbar .nav-right-with-contact header .container .header-wrapper ul.dropdown-menu {
+  border-radius: 10px;    
+}
+
+#nav-right-with-contact-v-extended-toolbar .nav-right-with-contact header .container .header-wrapper ul.dropdown-menu > li:first-child:not(:only-child) a {
+  border-radius: 10px 10px 0 0;
+}
+
+#nav-right-with-contact-v-extended-toolbar .nav-right-with-contact header .container .header-wrapper ul.dropdown-menu > li:last-child:not(:only-child) a {
+  border-radius: 0 0 10px 10px;
+}
+
+#nav-right-with-contact-v-extended-toolbar .nav-right-with-contact header .container .header-wrapper ul.dropdown-menu > li:not(:first-child):not(:last-child) a {
+  border-radius: 0;
+}
+
+#nav-right-with-contact-v-extended-toolbar .nav-right-with-contact header .container .header-wrapper ul.dropdown-menu > li:only-child a {
+  border-radius: 10px;
+}
+
+#nav-right-with-contact-v-extended-toolbar .click-through-mobile-contact-bar {
+  border-bottom: solid 1px var(--nav-border-bottom-color);
+}

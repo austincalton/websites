@@ -1,0 +1,46 @@
+<script>
+  (function($){
+
+    const component = document.querySelector('#brandPopularModelsHorizontalScrollComponent');
+    const cards = component.querySelectorAll(".bpm-card[data-model]");
+    const vehicles = Array.from(cards).map(card => ({
+      make: card.getAttribute("data-make") || "Nissan",
+      model: card.getAttribute("data-model")
+    }));
+
+    if(!vehicles.length) return;
+
+    $.ajax({
+      url: "/ajax/vehicles_lowest_price_and_count",
+      method: "POST",
+      contentType: "application/json",
+      data: JSON.stringify({ vehicles })
+    }).done(function(response){
+
+      const vehiclesArray = Array.isArray(response) ? response :
+                            response.vehicles && Array.isArray(response.vehicles) ? response.vehicles :
+                            Object.values(response);
+
+      vehiclesArray.forEach(vehicle => {
+        const card = component.querySelector(`.bpm-card[data-model='${vehicle.model}']`);
+        if(!card) return;
+
+        const countEl = card.querySelector(".vehicle-count");
+        const priceEl = card.querySelector(".start-price");
+
+        if(countEl) countEl.textContent = vehicle.count + " available";
+
+        if(priceEl) {
+          if(vehicle.lowest_price){
+            const rounded = "$" + (Math.round(vehicle.lowest_price / 1000)) + "K";
+            priceEl.textContent = "Starting at " + rounded;
+          } else {
+            priceEl.textContent = "Call for price";
+          }
+        }
+      });
+
+    });
+
+  })(jQuery);
+</script>
