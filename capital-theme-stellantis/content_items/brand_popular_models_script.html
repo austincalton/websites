@@ -1,14 +1,14 @@
 <script>
   (function($){
-
     const component = document.querySelector('#brandPopularModelsHorizontalScrollComponent');
-    const cards = component.querySelectorAll(".bpm-card[data-model]");
+    const cards = component.querySelectorAll(".bpm-card");
     const vehicles = Array.from(cards).map(card => ({
-      make: card.getAttribute("data-make") || "Nissan",
-      model: card.getAttribute("data-model")
-    }));
+      ...(card.dataset.make && { make: card.dataset.make }),
+      ...(card.dataset.model && { model: card.dataset.model }),
+      ...(card.dataset.year && { year: card.dataset.year })
+    })).filter(item => Object.keys(item).length > 0);
 
-    if(!vehicles.length) return;
+    if (!vehicles.length) return;
 
     $.ajax({
       url: "/ajax/vehicles_lowest_price_and_count",
@@ -16,13 +16,19 @@
       contentType: "application/json",
       data: JSON.stringify({ vehicles })
     }).done(function(response){
-
       const vehiclesArray = Array.isArray(response) ? response :
-                            response.vehicles && Array.isArray(response.vehicles) ? response.vehicles :
-                            Object.values(response);
+                        response.vehicles && Array.isArray(response.vehicles) ? response.vehicles :
+                        Object.values(response);
 
       vehiclesArray.forEach(vehicle => {
-        const card = component.querySelector(`.bpm-card[data-model='${vehicle.model}']`);
+        const attrs = ['year', 'make', 'model']
+          .filter(key => vehicle[key])
+          .map(key => `data-${key}='${vehicle[key]}'`);
+
+        const card = attrs.length > 0
+          ? component.querySelector(`.bpm-card[${attrs.join('][')}]`)
+          : null;
+
         if(!card) return;
 
         const countEl = card.querySelector(".vehicle-count");
@@ -39,7 +45,6 @@
           }
         }
       });
-
     });
 
   })(jQuery);
